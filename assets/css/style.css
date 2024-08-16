@@ -1,0 +1,101 @@
+:root {
+	--rat-width: 420px;
+	--logo-width: 400px;
+	background: black;
+	overflow: hidden;
+}
+
+canvas {
+	position: fixed;
+	bottom: 50px;
+	left: 0;
+	width: 100%;
+	margin: auto;
+}
+
+#main-container {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin: auto;
+}
+
+#rat-container {
+	width: 100%;
+	display: flex;
+}
+
+#rat-art {
+	width: var(--rat-width);
+}
+
+#rat-line-container {
+	flex-grow: 1;
+	width: var(--rat-width);
+	display: flex;
+	align-items: end;
+}
+
+
+#rat-line {
+	position: absolute;
+	width: 100%;
+	background-color: black;
+	font-size: 3pt;
+	margin-bottom: 19px;
+}
+
+@supports (-moz-appearance:none) {
+	#rat-line {
+		position: absolute;
+		width: 100%;
+		background-color: black;
+		font-size: 2.6pt;
+		margin-bottom: 19px;
+	}
+}
+
+#rat-line-background {
+	width: 100%;
+	background-color: white;
+	font-size: 11pt;
+	margin-bottom: 13px;
+}
+
+#rat-text {
+	position: absolute;
+	width: var(--logo-width);
+	margin-left: 2px;
+	bottom: 21px;
+}
+
+#links {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	padding-right: 12px;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 72px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+}
+
+a.clickable {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 48px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	transition: all 500ms;
+}
+
+a:hover.clickable {
+	font-size:72px;
+	font-size-adjust: 20px;
+}

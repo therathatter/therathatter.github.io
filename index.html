@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>Temple of the Rat</title>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/animate.min.css" />
+
+		<!-- prevent Dark Reader from breaking the CSS -->
+		<meta name="darkreader-lock">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="main-container">
+			<div id="rat-container">
+				<img id="rat-art" src="assets/images/logo.png" alt="logo"/>
+
+				<div id="rat-line-container">
+					<img id="rat-text" src="assets/images/text.png" alt="logo text"/>
+					<div id="rat-line-background">&nbsp;</div>
+					<div id="rat-line">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="links" class="animate__animated animate__slideInRight">
+			<a>projects:</a>
+			<a class="clickable" href="https://github.com/therathatter">github</a>
+			<br><br>
+
+			<a>contact:</a>
+			<a class="clickable" href="#" onclick="fake_href()">alex<!--fuck-your-webcrawler-->@templeof<!--fuck-your-webcrawler-->therat.com</a>
+			<a class="clickable" href="https://t.me/therathatter">telegram</a>
+		</div>
+
+		<script>
+			function fake_href() {
+				// email is hidden to prevent webcrawlers from spamming me
+				window.open('\x6d\x61\x69\x6c\x74\x6f\x3a\x61\x6c\x65' + '\x78\x40\x74\x65\x6d\x70\x6c\x65\x6f\x66' + '\x74\x68\x65\x72\x61\x74\x2e\x63\x6f\x6d');
+			}
+		</script>
+	</body>
+</html>
